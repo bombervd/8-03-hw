@@ -1,0 +1,16 @@
+# Local .terraform directories and files
+**/.terraform/*
+.terraform*
+
+!.terraformrc
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+terraform.tfvars
+
+803playbook.yml
+*.txt
+
+hosts.ini
