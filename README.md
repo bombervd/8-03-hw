@@ -30,28 +30,6 @@
  * скриншоты с успешно собранными сборками.
 
 Ответ: 
-Файл gitlab-ci.yml
+Файл gitlab-ci.yml в репозитории.
 
-#----
-stages:
-  - test
-  - build
-
-test:
-  stage: test
-  image: golang:latest
-  script:
-    - go test .
-  tags:
-    - Job
-
-build:
-  stage: build
-  image: docker:latest
-  script:
-    - docker build .
-  tags:
-    - Job
-#---- 
-
-<img src = "screens/20260502_runner.png" width = 100%>
+<img src = "screens/20260502_arty.png" width = 100%>
