@@ -1,0 +1,19 @@
+stages:
+  - test
+  - build
+
+test:
+  stage: test
+  image: golang:latest
+  script:
+    - go test .
+  tags:
+    - Job
+
+build:
+  stage: build
+  image: docker:latest
+  script:
+    - docker build .
+  tags:
+    - Job
